@@ -17,44 +17,50 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 18 18% 8%;
+    --foreground: 36 45% 85%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 18 18% 12%;
+    --card-foreground: 36 45% 85%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 18 18% 12%;
+    --popover-foreground: 36 45% 85%;
 
-    --primary: 24 95% 53%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 36 100% 50%;
+    --primary-foreground: 18 18% 8%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 18 18% 16%;
+    --secondary-foreground: 36 45% 85%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 18 18% 16%;
+    --muted-foreground: 36 25% 60%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 36 100% 50%;
+    --accent-foreground: 18 18% 8%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 24 95% 53%;
+    --border: 18 18% 20%;
+    --input: 18 18% 16%;
+    --ring: 36 100% 50%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 18 18% 10%;
+    --sidebar-foreground: 36 45% 85%;
+    --sidebar-primary: 36 100% 50%;
+    --sidebar-primary-foreground: 18 18% 8%;
+    --sidebar-accent: 18 18% 16%;
+    --sidebar-accent-foreground: 36 45% 85%;
+    --sidebar-border: 18 18% 20%;
+    --sidebar-ring: 36 100% 50%;
+
+    /* Egyptian-inspired colors */
+    --egyptian-gold: 45 100% 50%;
+    --egyptian-sand: 36 45% 75%;
+    --egyptian-papyrus: 30 25% 90%;
+    --egyptian-hieroglyph: 18 18% 25%;
   }
 
   .dark {
@@ -102,7 +108,7 @@
   }
 
   body {
-    @apply bg-white text-black font-sans antialiased;
+    @apply bg-background text-foreground font-sans antialiased;
   }
 
   /* Smooth scrolling */
@@ -139,7 +145,19 @@
   }
 
   .pulse-chip {
-    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-pulse-100 text-pulse-600 border border-pulse-200;
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/20 text-primary border border-primary/30;
+  }
+
+  .news-card {
+    @apply bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-all duration-300;
+  }
+
+  .egyptian-accent {
+    @apply text-primary font-medium;
+  }
+
+  .news-feed-layout {
+    @apply max-w-4xl mx-auto px-4 py-8;
   }
   
   .section-container {

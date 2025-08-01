@@ -17,50 +17,50 @@
 
 @layer base {
   :root {
-    --background: 18 18% 8%;
-    --foreground: 36 45% 85%;
+    --background: 0 0% 100%;
+    --foreground: 120 10% 15%;
 
-    --card: 18 18% 12%;
-    --card-foreground: 36 45% 85%;
+    --card: 0 0% 100%;
+    --card-foreground: 120 10% 15%;
 
-    --popover: 18 18% 12%;
-    --popover-foreground: 36 45% 85%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 120 10% 15%;
 
-    --primary: 36 100% 50%;
-    --primary-foreground: 18 18% 8%;
+    --primary: 142 69% 45%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 18 18% 16%;
-    --secondary-foreground: 36 45% 85%;
+    --secondary: 142 20% 96%;
+    --secondary-foreground: 120 10% 15%;
 
-    --muted: 18 18% 16%;
-    --muted-foreground: 36 25% 60%;
+    --muted: 142 20% 96%;
+    --muted-foreground: 120 10% 50%;
 
-    --accent: 36 100% 50%;
-    --accent-foreground: 18 18% 8%;
+    --accent: 142 50% 85%;
+    --accent-foreground: 120 10% 15%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 18 18% 20%;
-    --input: 18 18% 16%;
-    --ring: 36 100% 50%;
+    --border: 142 20% 90%;
+    --input: 142 20% 90%;
+    --ring: 142 69% 45%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 18 18% 10%;
-    --sidebar-foreground: 36 45% 85%;
-    --sidebar-primary: 36 100% 50%;
-    --sidebar-primary-foreground: 18 18% 8%;
-    --sidebar-accent: 18 18% 16%;
-    --sidebar-accent-foreground: 36 45% 85%;
-    --sidebar-border: 18 18% 20%;
-    --sidebar-ring: 36 100% 50%;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 120 10% 15%;
+    --sidebar-primary: 142 69% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 142 20% 96%;
+    --sidebar-accent-foreground: 120 10% 15%;
+    --sidebar-border: 142 20% 90%;
+    --sidebar-ring: 142 69% 45%;
 
-    /* Egyptian-inspired colors */
-    --egyptian-gold: 45 100% 50%;
-    --egyptian-sand: 36 45% 75%;
-    --egyptian-papyrus: 30 25% 90%;
-    --egyptian-hieroglyph: 18 18% 25%;
+    /* Egyptian Product Manager News colors */
+    --success-green: 142 69% 45%;
+    --light-green: 142 50% 85%;
+    --dark-green: 142 69% 35%;
+    --neutral-gray: 120 5% 50%;
   }
 
   .dark {

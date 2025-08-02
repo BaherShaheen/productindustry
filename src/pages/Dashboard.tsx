@@ -7,7 +7,12 @@ import Calendar from "react-calendar";
 import { Gallery4, Gallery4Item } from "@/components/ui/gallery4";
 import { PaginatedCards, NewsItem } from "@/components/blocks/PaginatedCards";
 
-const fetcher = (url: string) => fetch(`http://localhost:4000${url}`).then((r) => r.json());
+// Use Cloudflare Workers API in production, local API in development
+const API_BASE = process.env.NODE_ENV === 'production' 
+  ? 'https://cf-news-api.your-subdomain.workers.dev' 
+  : 'http://localhost:4000';
+
+const fetcher = (url: string) => fetch(`${API_BASE}${url}`).then((r) => r.json());
 
 export default function Dashboard() {
   // selected date for fetching

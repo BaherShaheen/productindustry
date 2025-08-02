@@ -20,6 +20,7 @@ import ResourcesReportsPage from "./pages/resources/ResourcesReportsPage";
 
 // Contact page
 import ContactPage from "./pages/ContactPage";
+import Dashboard from "./pages/Dashboard";
 
 const queryClient = new QueryClient();
 
@@ -46,6 +47,9 @@ const App = () => (
           
           {/* Contact route */}
           <Route path="/contact" element={<ContactPage />} />
+          
+          {/* Dashboard route */}
+          <Route path="/dashboard" element={<Dashboard />} />
           
           {/* Catch-all route */}
           <Route path="*" element={<NotFound />} />

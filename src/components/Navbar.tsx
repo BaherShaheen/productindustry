@@ -2,10 +2,12 @@
 import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -63,16 +65,13 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8">
-          <a 
-            href="#" 
+          <Link 
+            to="/" 
             className="nav-link"
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToTop();
-            }}
           >
             Home
-          </a>
+          </Link>
+          <Link to="/dashboard" className="nav-link">Dashboard</Link>
           <a href="#features" className="nav-link">About</a>
           <a href="#details" className="nav-link">Contact</a>
         </nav>
@@ -93,18 +92,26 @@ const Navbar = () => {
         isMenuOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full pointer-events-none"
       )}>
         <nav className="flex flex-col space-y-8 items-center mt-8">
-          <a 
-            href="#" 
+          <Link 
+            to="/" 
             className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-secondary"
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToTop();
+            onClick={() => {
               setIsMenuOpen(false);
               document.body.style.overflow = '';
             }}
           >
             Home
-          </a>
+          </Link>
+          <Link 
+            to="/dashboard" 
+            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-secondary"
+            onClick={() => {
+              setIsMenuOpen(false);
+              document.body.style.overflow = '';
+            }}
+          >
+            Dashboard
+          </Link>
           <a 
             href="#features" 
             className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-secondary"

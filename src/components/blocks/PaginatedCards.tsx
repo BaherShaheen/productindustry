@@ -38,7 +38,16 @@ export function PaginatedCards({ items, itemsPerPage = 9 }: PaginatedCardsProps)
       <div className="container mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {currentItems.map((item) => (
-            <Card key={item.id} className="hover:shadow-lg transition-shadow">
+            <Card key={item.id} className="hover:shadow-lg transition-shadow overflow-hidden">
+              {item.image && (
+                <div className="aspect-video overflow-hidden">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-cover transition-transform hover:scale-105"
+                  />
+                </div>
+              )}
               <CardHeader>
                 <CardTitle>{item.title}</CardTitle>
                 <CardDescription>{item.description}</CardDescription>

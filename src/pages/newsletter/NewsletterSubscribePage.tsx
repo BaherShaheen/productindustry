@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { GridPatternWrapper } from "@/components/ui/grid-pattern-wrapper";
 import { Mail, Send } from "lucide-react";
 
 const NewsletterSubscribePage = () => {
@@ -11,7 +12,7 @@ const NewsletterSubscribePage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <GridPatternWrapper className="min-h-screen bg-background" variant="default">
       <Header />
       <main className="pt-24">
         <div className="max-w-4xl mx-auto px-4 py-12">
@@ -85,7 +86,7 @@ const NewsletterSubscribePage = () => {
         </div>
       </main>
       <Footer />
-    </div>
+    </GridPatternWrapper>
   );
 };
 

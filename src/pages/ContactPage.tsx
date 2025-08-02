@@ -2,6 +2,7 @@ import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Phone, Mail, MapPin, Send } from "lucide-react";
+import { GridPatternWrapper } from "@/components/ui/grid-pattern-wrapper";
 
 const ContactPage = () => {
   const handleSubmit = (e: React.FormEvent) => {
@@ -10,7 +11,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <GridPatternWrapper className="min-h-screen bg-background" variant="dashed">
       <Header />
       <main className="pt-24">
         <div className="max-w-6xl mx-auto px-4 py-12">
@@ -159,7 +160,7 @@ const ContactPage = () => {
         </div>
       </main>
       <Footer />
-    </div>
+    </GridPatternWrapper>
   );
 };
 

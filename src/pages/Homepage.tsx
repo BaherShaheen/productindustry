@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import NewsCarousel from "@/components/NewsCarousel";
 import { PaginatedCards, NewsItem } from "@/components/blocks/PaginatedCards";
 import Footer from "@/components/Footer";
+import { GridPatternWrapper } from "@/components/ui/grid-pattern-wrapper";
 
 const Homepage = () => {
   // Sample data for PaginatedCards
@@ -94,14 +95,14 @@ const Homepage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <GridPatternWrapper className="min-h-screen bg-background" variant="default">
       <Header />
       <main className="pt-24">
         <NewsCarousel />
         <PaginatedCards items={sampleNewsItems} itemsPerPage={6} />
       </main>
       <Footer />
-    </div>
+    </GridPatternWrapper>
   );
 };
 

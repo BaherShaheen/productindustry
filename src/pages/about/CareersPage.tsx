@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { GridPatternWrapper } from "@/components/ui/grid-pattern-wrapper";
 import { Briefcase, Users, Clock, MapPin } from "lucide-react";
 
 const CareersPage = () => {
@@ -22,7 +23,7 @@ const CareersPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <GridPatternWrapper className="min-h-screen bg-background" variant="gradient">
       <Header />
       <main className="pt-24">
         <div className="max-w-6xl mx-auto px-4 py-12">
@@ -98,7 +99,7 @@ const CareersPage = () => {
         </div>
       </main>
       <Footer />
-    </div>
+    </GridPatternWrapper>
   );
 };
 

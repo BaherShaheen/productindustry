@@ -1,11 +1,12 @@
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { GridPatternWrapper } from "@/components/ui/grid-pattern-wrapper";
 import { Target, Lightbulb, Globe, Award } from "lucide-react";
 
 const MissionPage = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <GridPatternWrapper className="min-h-screen bg-background" variant="dashed">
       <Header />
       <main className="pt-24">
         <div className="max-w-4xl mx-auto px-4 py-12">
@@ -72,7 +73,7 @@ const MissionPage = () => {
         </div>
       </main>
       <Footer />
-    </div>
+    </GridPatternWrapper>
   );
 };
 

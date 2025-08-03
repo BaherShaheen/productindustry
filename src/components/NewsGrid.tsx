@@ -4,93 +4,123 @@ import { Calendar, User, Building2, ExternalLink } from "lucide-react";
 const newsData = [
   {
     id: 1,
-    title: "Swvl Restructures Operations Following Market Challenges",
-    excerpt: "Egyptian transport startup pivots strategy to focus on sustainable growth in emerging markets.",
+    title: "Orange Egypt Unveils AI-Powered Customer Service Platform",
+    excerpt: "Telecommunications leader integrates artificial intelligence to enhance customer experience and reduce response times by 60%.",
     author: "Sarah Ahmed",
-    date: "2024-08-01",
-    source: "Startup Scene",
+    date: "2024-08-03",
+    source: "Orange Egypt",
     image: "/lovable-uploads/5663820f-6c97-4492-9210-9eaa1a8dc415.png",
-    category: "Startups"
+    category: "AI & Tech"
   },
   {
     id: 2,
-    title: "Vodafone Egypt Launches 5G Network in New Administrative Capital",
-    excerpt: "Major telecommunications advancement brings high-speed connectivity to Egypt's new government hub.",
+    title: "Cairo Angels Launches $50M Fund for Egyptian Tech Startups",
+    excerpt: "Leading angel investment network announces major fund to accelerate growth of Egyptian technology companies and entrepreneurs.",
     author: "Mohamed Rashid",
-    date: "2024-07-31",
-    source: "Vodafone",
+    date: "2024-08-02",
+    source: "Cairo Angels",
     image: "/lovable-uploads/c3d5522b-6886-4b75-8ffc-d020016bb9c2.png",
-    category: "Telecom"
+    category: "Investment"
   },
   {
     id: 3,
-    title: "Fawry Expands Digital Payment Solutions for SMEs",
-    excerpt: "Leading fintech company introduces new features targeting small and medium enterprises across Egypt.",
+    title: "Banque Misr Partners with IBM for Digital Banking Revolution",
+    excerpt: "Historic Egyptian bank collaborates with tech giant to implement blockchain and cloud technologies for next-generation banking services.",
     author: "Layla Hassan",
-    date: "2024-07-30",
-    source: "Fawry",
+    date: "2024-08-01",
+    source: "Banque Misr",
     image: "/lovable-uploads/af412c03-21e4-4856-82ff-d1a975dc84a9.png",
-    category: "Fintech"
+    category: "Banking Tech"
   },
   {
     id: 4,
-    title: "Egyptian E-commerce Market Reaches $7.5B in 2024",
-    excerpt: "Comprehensive market analysis reveals unprecedented growth in online retail sector.",
+    title: "Jumia Egypt Reports 40% Growth in Mobile Commerce",
+    excerpt: "Leading e-commerce platform shows significant mobile adoption as Egyptian consumers embrace smartphone shopping experiences.",
     author: "Ahmed Nasser",
-    date: "2024-07-29",
-    source: "Market Research",
+    date: "2024-07-31",
+    source: "Jumia Egypt",
     image: "/lovable-uploads/dc13e94f-beeb-4671-8a22-0968498cdb4c.png",
     category: "E-commerce"
   },
   {
     id: 5,
-    title: "Uber Egypt Introduces Green Transportation Options",
-    excerpt: "Ride-sharing platform commits to environmental sustainability with new eco-friendly vehicle fleet.",
+    title: "Egyptian Space Agency Launches Satellite Technology Program",
+    excerpt: "Ambitious initiative to develop local satellite capabilities and support Egypt's growing space technology sector.",
     author: "Fatima Omar",
-    date: "2024-07-28",
-    source: "Uber",
+    date: "2024-07-30",
+    source: "Egyptian Space Agency",
     image: "/lovable-uploads/22d31f51-c174-40a7-bd95-00e4ad00eaf3.png",
-    category: "Transportation"
+    category: "Space Tech"
   },
   {
     id: 6,
-    title: "Microsoft Egypt Opens New Innovation Hub in Smart Village",
-    excerpt: "Tech giant establishes development center to support local talent and drive digital transformation.",
+    title: "Raya IT Expands Cloud Infrastructure Across MENA Region",
+    excerpt: "Egyptian technology solutions provider invests heavily in regional cloud infrastructure to serve growing demand.",
     author: "Omar Khaled",
-    date: "2024-07-27",
-    source: "Microsoft",
+    date: "2024-07-29",
+    source: "Raya IT",
     image: "/lovable-uploads/5663820f-6c97-4492-9210-9eaa1a8dc415.png",
-    category: "Tech Giants"
+    category: "Cloud Tech"
   },
   {
     id: 7,
-    title: "Paymob Secures Strategic Partnership with Major Banks",
-    excerpt: "Payment gateway provider strengthens position in Egyptian financial ecosystem through key alliances.",
+    title: "Instabug Reaches 10 Million Active Users Globally",
+    excerpt: "Egyptian-founded mobile app debugging platform achieves major milestone with global expansion and enterprise adoption.",
     author: "Nour Abdel Rahman",
-    date: "2024-07-26",
-    source: "Paymob",
+    date: "2024-07-28",
+    source: "Instabug",
     image: "/lovable-uploads/c3d5522b-6886-4b75-8ffc-d020016bb9c2.png",
-    category: "Fintech"
+    category: "Software"
   },
   {
     id: 8,
-    title: "Egyptian Gov Tech Initiative Digitizes Public Services",
-    excerpt: "Government accelerates digital transformation with new citizen-facing applications and services.",
+    title: "Egyptian Universities Launch Joint Cybersecurity Initiative",
+    excerpt: "Academic consortium establishes comprehensive cybersecurity program to address growing digital security challenges.",
     author: "Mahmoud Ali",
-    date: "2024-07-25",
-    source: "Gov Tech",
+    date: "2024-07-27",
+    source: "Educational Consortium",
     image: "/lovable-uploads/af412c03-21e4-4856-82ff-d1a975dc84a9.png",
-    category: "Gov Tech"
+    category: "Cybersecurity"
   },
   {
     id: 9,
-    title: "Local Delivery Startup Bosta Raises Series B Funding",
-    excerpt: "Egyptian logistics company secures major investment to expand operations across MENA region.",
+    title: "MaxAB Secures $40M Series B for B2B E-commerce Expansion",
+    excerpt: "Egyptian B2B marketplace platform raises significant funding to expand operations across Africa and the Middle East.",
     author: "Yasmin Farouk",
-    date: "2024-07-24",
-    source: "Bosta",
+    date: "2024-07-26",
+    source: "MaxAB",
     image: "/lovable-uploads/dc13e94f-beeb-4671-8a22-0968498cdb4c.png",
-    category: "Logistics"
+    category: "B2B Tech"
+  },
+  {
+    id: 10,
+    title: "Telecom Egypt Deploys Fiber Network in Rural Areas",
+    excerpt: "National telecommunications provider accelerates digital inclusion with high-speed internet infrastructure in underserved communities.",
+    author: "Amira Soliman",
+    date: "2024-07-25",
+    source: "Telecom Egypt",
+    image: "/lovable-uploads/22d31f51-c174-40a7-bd95-00e4ad00eaf3.png",
+    category: "Infrastructure"
+  },
+  {
+    id: 11,
+    title: "Egyptian Fintech Sector Attracts $200M in Q3 Investments",
+    excerpt: "Record-breaking quarter for Egyptian financial technology companies as international investors show strong interest in the market.",
+    author: "Hassan El-Shamy",
+    date: "2024-07-24",
+    source: "Fintech Report",
+    image: "/lovable-uploads/5663820f-6c97-4492-9210-9eaa1a8dc415.png",
+    category: "Fintech"
+  },
+  {
+    id: 12,
+    title: "Smart Village Cairo Announces New Tech Incubator Program",
+    excerpt: "Egypt's premier technology hub launches comprehensive startup incubation program to nurture next generation of tech entrepreneurs.",
+    author: "Dina Mostafa",
+    date: "2024-07-23",
+    source: "Smart Village",
+    image: "/lovable-uploads/c3d5522b-6886-4b75-8ffc-d020016bb9c2.png",
+    category: "Startups"
   }
 ];
 

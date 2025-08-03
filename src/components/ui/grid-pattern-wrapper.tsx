@@ -19,8 +19,10 @@ function GridPatternWrapper({
   const patternConfigs = {
     default: {
       squares: [
-        [4, 4], [5, 1], [8, 2], [5, 3], [5, 5], [10, 10],
-        [12, 15], [15, 10], [10, 15], [15, 10], [10, 15], [15, 10],
+        [4, 4] as [number, number], [5, 1] as [number, number], [8, 2] as [number, number], 
+        [5, 3] as [number, number], [5, 5] as [number, number], [10, 10] as [number, number],
+        [12, 15] as [number, number], [15, 10] as [number, number], [10, 15] as [number, number], 
+        [15, 10] as [number, number], [10, 15] as [number, number], [15, 10] as [number, number],
       ],
       className: "[mask-image:radial-gradient(400px_circle_at_center,white,transparent)] inset-x-0 inset-y-[-30%] h-[200%] skew-y-12",
       fillColor: "fill-gray-600/20 stroke-gray-600/20"
@@ -46,12 +48,12 @@ function GridPatternWrapper({
     <div className={cn(baseClasses, className)}>
       {children}
       <GridPattern
-        width={config.width || 40}
-        height={config.height || 40}
+        width={'width' in config ? config.width : 40}
+        height={'height' in config ? config.height : 40}
         x={-1}
         y={-1}
-        strokeDasharray={config.strokeDasharray || "0"}
-        squares={config.squares}
+        strokeDasharray={'strokeDasharray' in config ? config.strokeDasharray : "0"}
+        squares={'squares' in config ? config.squares : undefined}
         className={cn(config.className, config.fillColor)}
       />
     </div>

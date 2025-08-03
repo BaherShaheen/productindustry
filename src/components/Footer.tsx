@@ -2,6 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Twitter, Linkedin, Facebook } from "lucide-react";
+import productIndustryLogo from "@/assets/product-industry-logo.png";
 
 const Footer = () => {
   return (
@@ -11,16 +12,14 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">PM</span>
-              </div>
+              <img src={productIndustryLogo} alt="Product Industry" className="h-10 w-10" />
               <div>
-                <h3 className="font-bold text-lg">PM Egypt News</h3>
-                <p className="text-xs text-muted-foreground">Product Manager Feed</p>
+                <h3 className="font-bold text-lg">Product Industry</h3>
+                <p className="text-xs text-muted-foreground">Egypt Tech News</p>
               </div>
             </div>
             <p className="text-muted-foreground text-sm mb-4">
-              Egypt's leading source for product management insights, news, and community.
+              Egypt's leading source for technology insights, news, and innovation.
             </p>
             <div className="flex space-x-3">
               <a href="#" className="text-muted-foreground hover:text-primary">
@@ -68,7 +67,7 @@ const Footer = () => {
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Mail className="w-4 h-4" />
-                <span>hello@pmegyptnews.com</span>
+                <span>hello@productindustry.com</span>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Phone className="w-4 h-4" />
@@ -85,7 +84,7 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4 text-primary">Stay Updated</h4>
             <p className="text-muted-foreground text-sm mb-4">
-              Get the latest PM insights delivered to your inbox.
+              Get the latest tech insights delivered to your inbox.
             </p>
             <Link 
               to="/newsletter/subscribe"
@@ -98,7 +97,7 @@ const Footer = () => {
         
         <div className="border-t border-border pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-muted-foreground">
-            <p>© 2024 PM Egypt News. All rights reserved.</p>
+            <p>© 2024 Product Industry. All rights reserved.</p>
             <div className="flex space-x-4 mt-4 md:mt-0">
               <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>

@@ -5,30 +5,30 @@ import { motion, AnimatePresence } from "framer-motion";
 const featuredNews = [
   {
     id: 1,
-    title: "Talabat Egypt Expands AI-Powered Delivery System Across Cairo",
-    excerpt: "The food delivery giant announces major technological advancement in last-mile delivery optimization, reducing delivery times by 35% across the capital.",
+    title: "Fawry Launches New Digital Wallet with Blockchain Integration",
+    excerpt: "Egypt's leading fintech company introduces revolutionary digital wallet featuring blockchain technology and enhanced security protocols for seamless mobile payments.",
     image: "/lovable-uploads/5663820f-6c97-4492-9210-9eaa1a8dc415.png",
     author: "Ahmed Hassan",
-    date: "2024-08-01",
-    source: "Talabat"
+    date: "2024-08-03",
+    source: "Fawry"
   },
   {
     id: 2,
-    title: "Amazon Egypt Launches New Seller Program for Local Entrepreneurs",
-    excerpt: "Supporting Egyptian small businesses with comprehensive onboarding, training, and marketing support to compete in the global marketplace.",
+    title: "Vodafone Egypt Deploys 5G Network in New Administrative Capital",
+    excerpt: "Major telecommunications breakthrough as Vodafone Egypt activates 5G infrastructure across the New Administrative Capital, enabling IoT and smart city initiatives.",
     image: "/lovable-uploads/c3d5522b-6886-4b75-8ffc-d020016bb9c2.png",
     author: "Fatima Al-Rashid",
-    date: "2024-07-31",
-    source: "Amazon Egypt"
+    date: "2024-08-02",
+    source: "Vodafone Egypt"
   },
   {
     id: 3,
-    title: "Egyptian Fintech Startup Secures $15M Series A Funding",
-    excerpt: "Revolutionary payment platform aims to transform digital banking experience for millions of Egyptians with innovative mobile-first approach.",
+    title: "Swvl Partners with Cairo Metro for Smart Transportation Solutions",
+    excerpt: "Egyptian mobility startup Swvl announces strategic partnership with Cairo Metro to integrate digital ticketing and real-time passenger analytics.",
     image: "/lovable-uploads/af412c03-21e4-4856-82ff-d1a975dc84a9.png",
     author: "Omar Khaled",
-    date: "2024-07-30",
-    source: "TechCrunch ME"
+    date: "2024-08-01",
+    source: "Swvl"
   }
 ];
 
@@ -136,7 +136,7 @@ const NewsCarousel = () => {
         <p className="text-muted-foreground text-lg">Stay updated with the most important tech news from Egypt</p>
       </div>
       
-      <div className="grid md:grid-cols-2 gap-12 items-center">
+      <div className="grid md:grid-cols-2 gap-12 items-start">
         {/* 3D Image Carousel */}
         <div className="relative h-96" style={{ perspective: "1000px" }} ref={imageContainerRef}>
           {featuredNews.map((news, index) => (
@@ -162,7 +162,7 @@ const NewsCarousel = () => {
         </div>
 
         {/* Content Section */}
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-start z-10 relative bg-background/95 backdrop-blur-sm rounded-lg p-6">
           <AnimatePresence mode="wait">
             <motion.div
               key={currentSlide}

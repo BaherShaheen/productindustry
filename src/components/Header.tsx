@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
+import { ThemeToggle } from "@/components/ThemeToggle";
+import productIndustryLogo from "@/assets/product-industry-logo.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -58,58 +60,60 @@ const Header = () => {
     >
       <div className="container flex items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center space-x-3">
-          <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-lg">PM</span>
-          </div>
+          <img src={productIndustryLogo} alt="Product Industry" className="h-10 w-10" />
           <div className="hidden sm:block">
-            <h1 className="font-bold text-xl text-foreground">PM Egypt News</h1>
-            <p className="text-xs text-muted-foreground">Product Manager Feed</p>
+            <h1 className="font-bold text-xl text-foreground">Product Industry</h1>
+            <p className="text-xs text-muted-foreground">Egypt Tech News</p>
           </div>
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-8">
-          {Object.entries(navigation).map(([key, items]) => (
-            <div 
-              key={key}
-              className="relative"
-              onMouseEnter={() => handleDropdownHover(key)}
-              onMouseLeave={() => handleDropdownHover(null)}
-            >
-              <button className="flex items-center space-x-1 text-foreground hover:text-primary py-2 transition-colors duration-200 font-medium">
-                <span>{key}</span>
-                <ChevronDown className="w-4 h-4" />
-              </button>
-              
-              {/* Dropdown Menu */}
-              <div className={cn(
-                "absolute top-full left-0 mt-1 w-64 bg-card border border-border rounded-lg shadow-lg z-50 transition-all duration-200",
-                activeDropdown === key 
-                  ? "opacity-100 translate-y-0 visible" 
-                  : "opacity-0 translate-y-2 invisible"
-              )}>
-                <div className="py-2">
-                  {items.map((item) => (
-                    <Link
-                      key={item.name}
-                      to={item.href}
-                      className="block px-4 py-3 text-foreground hover:bg-accent hover:text-primary transition-colors duration-150"
-                    >
-                      {item.name}
-                    </Link>
-                  ))}
+        <div className="hidden md:flex items-center space-x-6">
+          <nav className="flex space-x-8">
+            {Object.entries(navigation).map(([key, items]) => (
+              <div 
+                key={key}
+                className="relative"
+                onMouseEnter={() => handleDropdownHover(key)}
+                onMouseLeave={() => handleDropdownHover(null)}
+              >
+                <button className="flex items-center space-x-1 text-foreground hover:text-primary py-2 transition-colors duration-200 font-medium">
+                  <span>{key}</span>
+                  <ChevronDown className="w-4 h-4" />
+                </button>
+                
+                {/* Dropdown Menu */}
+                <div className={cn(
+                  "absolute top-full left-0 mt-1 w-64 bg-card border border-border rounded-lg shadow-lg z-50 transition-all duration-200",
+                  activeDropdown === key 
+                    ? "opacity-100 translate-y-0 visible" 
+                    : "opacity-0 translate-y-2 invisible"
+                )}>
+                  <div className="py-2">
+                    {items.map((item) => (
+                      <Link
+                        key={item.name}
+                        to={item.href}
+                        className="block px-4 py-3 text-foreground hover:bg-accent hover:text-primary transition-colors duration-150"
+                      >
+                        {item.name}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+            
+            <Link 
+              to="/contact" 
+              className="text-foreground hover:text-primary py-2 transition-colors duration-200 font-medium"
+            >
+              Contact Us
+            </Link>
+          </nav>
           
-          <Link 
-            to="/contact" 
-            className="text-foreground hover:text-primary py-2 transition-colors duration-200 font-medium"
-          >
-            Contact Us
-          </Link>
-        </nav>
+          <ThemeToggle />
+        </div>
 
         {/* Mobile menu button */}
         <button 

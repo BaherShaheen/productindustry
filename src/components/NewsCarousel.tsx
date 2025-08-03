@@ -5,30 +5,30 @@ import { motion, AnimatePresence } from "framer-motion";
 const featuredNews = [
   {
     id: 1,
-    title: "Fawry Launches New Digital Wallet with Blockchain Integration",
-    excerpt: "Egypt's leading fintech company introduces revolutionary digital wallet featuring blockchain technology and enhanced security protocols for seamless mobile payments.",
+    title: "Paymob Egypt Processes Over $2B in Annual Transactions",
+    excerpt: "Egyptian payment gateway giant reports record-breaking year with 300% growth in digital payments, partnering with major banks and expanding across MENA region.",
     image: "/lovable-uploads/5663820f-6c97-4492-9210-9eaa1a8dc415.png",
-    author: "Ahmed Hassan",
+    author: "Ahmed Mansour",
     date: "2024-08-03",
-    source: "Fawry"
+    source: "Paymob"
   },
   {
     id: 2,
-    title: "Vodafone Egypt Deploys 5G Network in New Administrative Capital",
-    excerpt: "Major telecommunications breakthrough as Vodafone Egypt activates 5G infrastructure across the New Administrative Capital, enabling IoT and smart city initiatives.",
+    title: "Egypt's Sovereign Fund Launches $500M Tech Investment Program",
+    excerpt: "The Egyptian Sovereign Fund announces massive technology investment initiative to support local startups and attract international tech companies to establish operations in Egypt.",
     image: "/lovable-uploads/c3d5522b-6886-4b75-8ffc-d020016bb9c2.png",
-    author: "Fatima Al-Rashid",
+    author: "Mariam El-Sherbiny",
     date: "2024-08-02",
-    source: "Vodafone Egypt"
+    source: "Egyptian Sovereign Fund"
   },
   {
     id: 3,
-    title: "Swvl Partners with Cairo Metro for Smart Transportation Solutions",
-    excerpt: "Egyptian mobility startup Swvl announces strategic partnership with Cairo Metro to integrate digital ticketing and real-time passenger analytics.",
+    title: "Wasla Browser Becomes Egypt's First Locally-Developed Web Browser",
+    excerpt: "Egyptian developers launch Wasla, a privacy-focused web browser built specifically for Arabic-speaking users with enhanced security features and local content optimization.",
     image: "/lovable-uploads/af412c03-21e4-4856-82ff-d1a975dc84a9.png",
-    author: "Omar Khaled",
+    author: "Hassan Abdel-Aziz",
     date: "2024-08-01",
-    source: "Swvl"
+    source: "Wasla Tech"
   }
 ];
 

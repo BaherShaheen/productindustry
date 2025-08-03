@@ -4,123 +4,123 @@ import { Calendar, User, Building2, ExternalLink } from "lucide-react";
 const newsData = [
   {
     id: 1,
-    title: "Orange Egypt Unveils AI-Powered Customer Service Platform",
-    excerpt: "Telecommunications leader integrates artificial intelligence to enhance customer experience and reduce response times by 60%.",
-    author: "Sarah Ahmed",
+    title: "Talabat Egypt Introduces AI-Powered Restaurant Recommendations",
+    excerpt: "Food delivery platform leverages machine learning to provide personalized restaurant suggestions, boosting customer satisfaction by 45% across Egyptian cities.",
+    author: "Nora Farid",
     date: "2024-08-03",
-    source: "Orange Egypt",
+    source: "Talabat Egypt",
     image: "/lovable-uploads/5663820f-6c97-4492-9210-9eaa1a8dc415.png",
-    category: "AI & Tech"
+    category: "AI & Food Tech"
   },
   {
     id: 2,
-    title: "Cairo Angels Launches $50M Fund for Egyptian Tech Startups",
-    excerpt: "Leading angel investment network announces major fund to accelerate growth of Egyptian technology companies and entrepreneurs.",
-    author: "Mohamed Rashid",
+    title: "CIB Bank Partners with Mastercard for Contactless Payment Revolution",
+    excerpt: "Commercial International Bank Egypt introduces next-generation contactless payment solutions, targeting 2 million new digital banking customers by 2025.",
+    author: "Karim Hosny",
     date: "2024-08-02",
-    source: "Cairo Angels",
+    source: "CIB Bank",
     image: "/lovable-uploads/c3d5522b-6886-4b75-8ffc-d020016bb9c2.png",
-    category: "Investment"
+    category: "Digital Banking"
   },
   {
     id: 3,
-    title: "Banque Misr Partners with IBM for Digital Banking Revolution",
-    excerpt: "Historic Egyptian bank collaborates with tech giant to implement blockchain and cloud technologies for next-generation banking services.",
-    author: "Layla Hassan",
+    title: "Careem Egypt Expands Super App Services to Include Healthcare",
+    excerpt: "Ride-hailing platform adds telemedicine consultations and pharmacy delivery services, transforming into comprehensive lifestyle platform for Egyptian users.",
+    author: "Yasmin Taha",
     date: "2024-08-01",
-    source: "Banque Misr",
+    source: "Careem Egypt",
     image: "/lovable-uploads/af412c03-21e4-4856-82ff-d1a975dc84a9.png",
-    category: "Banking Tech"
+    category: "Healthcare Tech"
   },
   {
     id: 4,
-    title: "Jumia Egypt Reports 40% Growth in Mobile Commerce",
-    excerpt: "Leading e-commerce platform shows significant mobile adoption as Egyptian consumers embrace smartphone shopping experiences.",
-    author: "Ahmed Nasser",
+    title: "Alexandria Technology Park Attracts $100M in New Investments",
+    excerpt: "Egypt's coastal tech hub secures major funding from international investors, with plans to house 50 new technology companies focused on maritime and logistics tech.",
+    author: "Mohamed Salah",
     date: "2024-07-31",
-    source: "Jumia Egypt",
+    source: "Alexandria Tech Park",
     image: "/lovable-uploads/dc13e94f-beeb-4671-8a22-0968498cdb4c.png",
-    category: "E-commerce"
+    category: "Investment"
   },
   {
     id: 5,
-    title: "Egyptian Space Agency Launches Satellite Technology Program",
-    excerpt: "Ambitious initiative to develop local satellite capabilities and support Egypt's growing space technology sector.",
-    author: "Fatima Omar",
+    title: "Souq.com Alumni Launch Egyptian E-learning Platform Nafham 2.0",
+    excerpt: "Former Souq.com executives revive popular Egyptian educational platform with advanced AI tutoring and personalized learning paths for Arabic content.",
+    author: "Dina Mohsen",
     date: "2024-07-30",
-    source: "Egyptian Space Agency",
+    source: "Nafham",
     image: "/lovable-uploads/22d31f51-c174-40a7-bd95-00e4ad00eaf3.png",
-    category: "Space Tech"
+    category: "EdTech"
   },
   {
     id: 6,
-    title: "Raya IT Expands Cloud Infrastructure Across MENA Region",
-    excerpt: "Egyptian technology solutions provider invests heavily in regional cloud infrastructure to serve growing demand.",
-    author: "Omar Khaled",
+    title: "Etisalat Egypt Becomes First Telecom to Offer Satellite Internet",
+    excerpt: "Telecommunications leader partners with global satellite providers to bring high-speed internet to remote Egyptian communities and rural areas.",
+    author: "Tarek Nabil",
     date: "2024-07-29",
-    source: "Raya IT",
+    source: "Etisalat Egypt",
     image: "/lovable-uploads/5663820f-6c97-4492-9210-9eaa1a8dc415.png",
-    category: "Cloud Tech"
+    category: "Telecom"
   },
   {
     id: 7,
-    title: "Instabug Reaches 10 Million Active Users Globally",
-    excerpt: "Egyptian-founded mobile app debugging platform achieves major milestone with global expansion and enterprise adoption.",
-    author: "Nour Abdel Rahman",
+    title: "Egyptian Startup Rology Raises $5M for Medical Imaging AI",
+    excerpt: "Cairo-based medical technology company secures Series A funding to expand AI-powered radiology solutions across Middle East and Africa healthcare systems.",
+    author: "Amina Hassan",
     date: "2024-07-28",
-    source: "Instabug",
+    source: "Rology",
     image: "/lovable-uploads/c3d5522b-6886-4b75-8ffc-d020016bb9c2.png",
-    category: "Software"
+    category: "HealthTech"
   },
   {
     id: 8,
-    title: "Egyptian Universities Launch Joint Cybersecurity Initiative",
-    excerpt: "Academic consortium establishes comprehensive cybersecurity program to address growing digital security challenges.",
-    author: "Mahmoud Ali",
+    title: "ITIDA Launches National Cybersecurity Training Program",
+    excerpt: "Information Technology Industry Development Agency initiates comprehensive cybersecurity certification program to train 10,000 Egyptian professionals by 2025.",
+    author: "Omar Zaki",
     date: "2024-07-27",
-    source: "Educational Consortium",
+    source: "ITIDA",
     image: "/lovable-uploads/af412c03-21e4-4856-82ff-d1a975dc84a9.png",
     category: "Cybersecurity"
   },
   {
     id: 9,
-    title: "MaxAB Secures $40M Series B for B2B E-commerce Expansion",
-    excerpt: "Egyptian B2B marketplace platform raises significant funding to expand operations across Africa and the Middle East.",
-    author: "Yasmin Farouk",
+    title: "Elmenus Integrates with Google Pay for Seamless Food Ordering",
+    excerpt: "Egyptian food discovery platform enhances user experience with Google Pay integration, reducing checkout time by 70% and increasing order completion rates.",
+    author: "Layla Mahmoud",
     date: "2024-07-26",
-    source: "MaxAB",
+    source: "Elmenus",
     image: "/lovable-uploads/dc13e94f-beeb-4671-8a22-0968498cdb4c.png",
-    category: "B2B Tech"
+    category: "Food Tech"
   },
   {
     id: 10,
-    title: "Telecom Egypt Deploys Fiber Network in Rural Areas",
-    excerpt: "National telecommunications provider accelerates digital inclusion with high-speed internet infrastructure in underserved communities.",
-    author: "Amira Soliman",
+    title: "Cairo University Launches Africa's Largest AI Research Center",
+    excerpt: "Academic institution establishes cutting-edge artificial intelligence research facility with partnerships from IBM, Microsoft, and local tech companies.",
+    author: "Mahmoud Reda",
     date: "2024-07-25",
-    source: "Telecom Egypt",
+    source: "Cairo University",
     image: "/lovable-uploads/22d31f51-c174-40a7-bd95-00e4ad00eaf3.png",
-    category: "Infrastructure"
+    category: "Research & AI"
   },
   {
     id: 11,
-    title: "Egyptian Fintech Sector Attracts $200M in Q3 Investments",
-    excerpt: "Record-breaking quarter for Egyptian financial technology companies as international investors show strong interest in the market.",
-    author: "Hassan El-Shamy",
+    title: "Vezeeta Expands Telemedicine Services to Rural Egypt",
+    excerpt: "Healthcare booking platform extends digital health services to underserved communities, partnering with Ministry of Health for nationwide coverage.",
+    author: "Fatma El-Zahra",
     date: "2024-07-24",
-    source: "Fintech Report",
+    source: "Vezeeta",
     image: "/lovable-uploads/5663820f-6c97-4492-9210-9eaa1a8dc415.png",
-    category: "Fintech"
+    category: "Digital Health"
   },
   {
     id: 12,
-    title: "Smart Village Cairo Announces New Tech Incubator Program",
-    excerpt: "Egypt's premier technology hub launches comprehensive startup incubation program to nurture next generation of tech entrepreneurs.",
-    author: "Dina Mostafa",
+    title: "Egyptian Fintech Valdyfy Secures Regulatory Approval for Digital Identity",
+    excerpt: "Identity verification startup receives Central Bank of Egypt approval to provide KYC solutions for financial institutions across the MENA region.",
+    author: "Heba Abdel-Nasser",
     date: "2024-07-23",
-    source: "Smart Village",
+    source: "Valdyfy",
     image: "/lovable-uploads/c3d5522b-6886-4b75-8ffc-d020016bb9c2.png",
-    category: "Startups"
+    category: "Identity Tech"
   }
 ];
 

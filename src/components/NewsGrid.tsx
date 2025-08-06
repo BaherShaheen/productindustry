@@ -1,126 +1,132 @@
 import React, { useState } from "react";
 import { Calendar, User, Building2, ExternalLink } from "lucide-react";
+import egyptianAiStartup from "../assets/egyptian-ai-startup.jpg";
+import egyptTelecom5g from "../assets/egypt-telecom-5g.jpg";
+import egyptEcommerceTech from "../assets/egypt-ecommerce-tech.jpg";
+import egyptGreentech from "../assets/egypt-greentech.jpg";
+import egyptFintechBlockchain from "../assets/egypt-fintech-blockchain.jpg";
+import egyptAiResearch from "../assets/egypt-ai-research.jpg";
 
 const newsData = [
   {
     id: 1,
-    title: "Talabat Egypt Introduces AI-Powered Restaurant Recommendations",
-    excerpt: "Food delivery platform leverages machine learning to provide personalized restaurant suggestions, boosting customer satisfaction by 45% across Egyptian cities.",
-    author: "Nora Farid",
-    date: "2024-08-03",
-    source: "Talabat Egypt",
-    image: "/lovable-uploads/5663820f-6c97-4492-9210-9eaa1a8dc415.png",
-    category: "AI & Food Tech"
+    title: "Egyptian AI Startup Rypple Raises $8M Series A for Conversational Commerce",
+    excerpt: "Cairo-based startup develops Arabic-first AI chatbots for e-commerce, helping Egyptian businesses automate customer service and boost sales by 65%.",
+    author: "Nour El-Din Farouk",
+    date: "2024-08-06",
+    source: "Rypple AI",
+    image: egyptianAiStartup,
+    category: "AI & Commerce"
   },
   {
     id: 2,
-    title: "CIB Bank Partners with Mastercard for Contactless Payment Revolution",
-    excerpt: "Commercial International Bank Egypt introduces next-generation contactless payment solutions, targeting 2 million new digital banking customers by 2025.",
-    author: "Karim Hosny",
-    date: "2024-08-02",
-    source: "CIB Bank",
-    image: "/lovable-uploads/c3d5522b-6886-4b75-8ffc-d020016bb9c2.png",
-    category: "Digital Banking"
+    title: "Vodafone Egypt Launches 5G Network Across Greater Cairo",
+    excerpt: "Telecommunications giant activates next-generation mobile network infrastructure, promising download speeds up to 1Gbps for Egyptian consumers and businesses.",
+    author: "Salma Rashid",
+    date: "2024-08-05",
+    source: "Vodafone Egypt",
+    image: egyptTelecom5g,
+    category: "5G Technology"
   },
   {
     id: 3,
-    title: "Careem Egypt Expands Super App Services to Include Healthcare",
-    excerpt: "Ride-hailing platform adds telemedicine consultations and pharmacy delivery services, transforming into comprehensive lifestyle platform for Egyptian users.",
-    author: "Yasmin Taha",
-    date: "2024-08-01",
-    source: "Careem Egypt",
-    image: "/lovable-uploads/af412c03-21e4-4856-82ff-d1a975dc84a9.png",
-    category: "Healthcare Tech"
+    title: "Jumia Egypt Introduces AI-Powered Logistics Optimization",
+    excerpt: "E-commerce platform implements machine learning algorithms to reduce delivery times by 40% across Egyptian cities, revolutionizing last-mile delivery.",
+    author: "Karim Hassan",
+    date: "2024-08-04",
+    source: "Jumia Egypt",
+    image: egyptEcommerceTech,
+    category: "E-commerce Tech"
   },
   {
     id: 4,
-    title: "Alexandria Technology Park Attracts $100M in New Investments",
-    excerpt: "Egypt's coastal tech hub secures major funding from international investors, with plans to house 50 new technology companies focused on maritime and logistics tech.",
-    author: "Mohamed Salah",
-    date: "2024-07-31",
-    source: "Alexandria Tech Park",
-    image: "/lovable-uploads/dc13e94f-beeb-4671-8a22-0968498cdb4c.png",
-    category: "Investment"
+    title: "Egyptian GreenTech Startup KarmSolar Expands to 15 African Countries",
+    excerpt: "Solar energy company leverages IoT and smart grid technology to bring renewable energy solutions across the African continent, targeting 50MW capacity.",
+    author: "Yasmin Abdel-Rahman",
+    date: "2024-08-03",
+    source: "KarmSolar",
+    image: egyptGreentech,
+    category: "GreenTech"
   },
   {
     id: 5,
-    title: "Souq.com Alumni Launch Egyptian E-learning Platform Nafham 2.0",
-    excerpt: "Former Souq.com executives revive popular Egyptian educational platform with advanced AI tutoring and personalized learning paths for Arabic content.",
-    author: "Dina Mohsen",
-    date: "2024-07-30",
-    source: "Nafham",
-    image: "/lovable-uploads/22d31f51-c174-40a7-bd95-00e4ad00eaf3.png",
-    category: "EdTech"
+    title: "Egyptian Central Bank Approves First Cryptocurrency Exchange License",
+    excerpt: "CoinMENA receives regulatory approval to operate digital asset trading platform in Egypt, marking milestone for blockchain adoption in the region.",
+    author: "Mahmoud El-Sayed",
+    date: "2024-08-02",
+    source: "CoinMENA",
+    image: egyptFintechBlockchain,
+    category: "Blockchain & Fintech"
   },
   {
     id: 6,
-    title: "Etisalat Egypt Becomes First Telecom to Offer Satellite Internet",
-    excerpt: "Telecommunications leader partners with global satellite providers to bring high-speed internet to remote Egyptian communities and rural areas.",
-    author: "Tarek Nabil",
-    date: "2024-07-29",
-    source: "Etisalat Egypt",
-    image: "/lovable-uploads/5663820f-6c97-4492-9210-9eaa1a8dc415.png",
-    category: "Telecom"
+    title: "American University in Cairo Establishes $20M AI Research Institute",
+    excerpt: "Academic institution partners with Google and Microsoft to create cutting-edge artificial intelligence lab focusing on Arabic language processing and computer vision.",
+    author: "Dr. Amira Soliman",
+    date: "2024-08-01",
+    source: "AUC",
+    image: egyptAiResearch,
+    category: "AI Research"
   },
   {
     id: 7,
-    title: "Egyptian Startup Rology Raises $5M for Medical Imaging AI",
-    excerpt: "Cairo-based medical technology company secures Series A funding to expand AI-powered radiology solutions across Middle East and Africa healthcare systems.",
-    author: "Amina Hassan",
-    date: "2024-07-28",
-    source: "Rology",
-    image: "/lovable-uploads/c3d5522b-6886-4b75-8ffc-d020016bb9c2.png",
-    category: "HealthTech"
+    title: "Egyptian Startup Swvl Announces $50M Investment in Smart Transportation",
+    excerpt: "Mass transit technology company secures funding to expand AI-powered bus routing and dynamic pricing systems across Middle East and Africa.",
+    author: "Omar Nabil",
+    date: "2024-07-31",
+    source: "Swvl",
+    image: egyptianAiStartup,
+    category: "Transportation Tech"
   },
   {
     id: 8,
-    title: "ITIDA Launches National Cybersecurity Training Program",
-    excerpt: "Information Technology Industry Development Agency initiates comprehensive cybersecurity certification program to train 10,000 Egyptian professionals by 2025.",
-    author: "Omar Zaki",
-    date: "2024-07-27",
-    source: "ITIDA",
-    image: "/lovable-uploads/af412c03-21e4-4856-82ff-d1a975dc84a9.png",
-    category: "Cybersecurity"
+    title: "Orange Egypt Partners with Ericsson for Private 5G Networks",
+    excerpt: "Telecommunications operator launches dedicated 5G infrastructure for Egyptian manufacturers and enterprises, enabling Industry 4.0 applications.",
+    author: "Rana Mostafa",
+    date: "2024-07-30",
+    source: "Orange Egypt",
+    image: egyptTelecom5g,
+    category: "Enterprise 5G"
   },
   {
     id: 9,
-    title: "Elmenus Integrates with Google Pay for Seamless Food Ordering",
-    excerpt: "Egyptian food discovery platform enhances user experience with Google Pay integration, reducing checkout time by 70% and increasing order completion rates.",
-    author: "Layla Mahmoud",
-    date: "2024-07-26",
-    source: "Elmenus",
-    image: "/lovable-uploads/dc13e94f-beeb-4671-8a22-0968498cdb4c.png",
-    category: "Food Tech"
+    title: "Egyptian E-commerce Platform Noon Integrates Augmented Reality Shopping",
+    excerpt: "Online marketplace introduces AR technology allowing customers to virtually try products before purchase, reducing return rates by 45%.",
+    author: "Dina Mahmoud",
+    date: "2024-07-29",
+    source: "Noon Egypt",
+    image: egyptEcommerceTech,
+    category: "AR & E-commerce"
   },
   {
     id: 10,
-    title: "Cairo University Launches Africa's Largest AI Research Center",
-    excerpt: "Academic institution establishes cutting-edge artificial intelligence research facility with partnerships from IBM, Microsoft, and local tech companies.",
-    author: "Mahmoud Reda",
-    date: "2024-07-25",
-    source: "Cairo University",
-    image: "/lovable-uploads/22d31f51-c174-40a7-bd95-00e4ad00eaf3.png",
-    category: "Research & AI"
+    title: "Egypt's New Administrative Capital Becomes Smart City Testbed",
+    excerpt: "Government initiative implements IoT sensors, smart lighting, and AI-powered traffic management across the new capital, serving as model for African smart cities.",
+    author: "Ahmed Zaki",
+    date: "2024-07-28",
+    source: "NAC Authority",
+    image: egyptGreentech,
+    category: "Smart Cities"
   },
   {
     id: 11,
-    title: "Vezeeta Expands Telemedicine Services to Rural Egypt",
-    excerpt: "Healthcare booking platform extends digital health services to underserved communities, partnering with Ministry of Health for nationwide coverage.",
-    author: "Fatma El-Zahra",
-    date: "2024-07-24",
-    source: "Vezeeta",
-    image: "/lovable-uploads/5663820f-6c97-4492-9210-9eaa1a8dc415.png",
-    category: "Digital Health"
+    title: "Egyptian Fintech Shahry Launches Digital Salary Platform",
+    excerpt: "Financial technology startup provides earned wage access and financial wellness tools for Egyptian employees, partnering with 200+ companies.",
+    author: "Noha Farid",
+    date: "2024-07-27",
+    source: "Shahry",
+    image: egyptFintechBlockchain,
+    category: "Fintech Solutions"
   },
   {
     id: 12,
-    title: "Egyptian Fintech Valdyfy Secures Regulatory Approval for Digital Identity",
-    excerpt: "Identity verification startup receives Central Bank of Egypt approval to provide KYC solutions for financial institutions across the MENA region.",
-    author: "Heba Abdel-Nasser",
-    date: "2024-07-23",
-    source: "Valdyfy",
-    image: "/lovable-uploads/c3d5522b-6886-4b75-8ffc-d020016bb9c2.png",
-    category: "Identity Tech"
+    title: "Cairo University's AI Lab Develops Arabic Medical Diagnosis System",
+    excerpt: "Research team creates machine learning model for medical diagnosis using Arabic patient data, achieving 94% accuracy rate for common conditions.",
+    author: "Prof. Hany Farouk",
+    date: "2024-07-26",
+    source: "Cairo University",
+    image: egyptAiResearch,
+    category: "Medical AI"
   }
 ];
 
